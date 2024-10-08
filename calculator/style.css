@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.calsi {
+    display: flex;
+    background-color: rgb(24, 24, 24);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 70vw;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(214, 214, 214, 0.2), 0 6px 20px 0 rgba(214, 214, 214, 0.19);
+    border-radius: 15px;
+}
+
+.calsi input {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 20%;
+    font-size: 30px;
+}
+
+.calsi .btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(214, 214, 214, 0.2), 0 6px 20px 0 rgba(214, 214, 214, 0.19);
+    margin-top: 10px;
+}
+
+.calsi .btns button {
+    width: 28%;
+    color: beige;
+    background-color: rgb(68, 68, 68);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(214, 214, 214, 0.2), 0 6px 20px 0 rgba(214, 214, 214, 0.19);
+    padding-top: 5%;
+}
+
+.calsi .btns button:nth-child(1) {
+    margin-top: 10px;
+}
+
+.calsi .btns button:nth-child(2) {
+    margin-top: 10px;
+}
+
+.calsi .btns button:nth-child(3) {
+    margin-top: 10px;
+}
+
+.calsi .btns button:nth-child(16) {
+    margin-bottom: 10px;
+}

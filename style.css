@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=DynaPuff&family=Poppins:wght@500&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Dongle', sans-serif;
+font-family: 'DynaPuff', cursive; */
+    font-family: 'Poppins', sans-serif;
+    transition: all 1s linear;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+@keyframes upDown {
+    0% {
+        position: absolute;
+    }
+
+    50% {
+        position: absolute;
+        top: 450px;
+    }
+
+    100% {
+        position: absolute;
+    }
+}
+
+@keyframes downup {
+    0% {
+        position: absolute;
+    }
+
+    50% {
+        position: absolute;
+        top: -90px;
+    }
+
+    100% {
+        position: absolute;
+    }
+}
+
+@keyframes textbigsmall {
+    0% {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    50% {
+        font-family: 'DynaPuff', cursive;
+    }
+
+    100% {
+        font-family: 'Poppins', sans-serif;
+
+    }
+}
+
+.starting-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    background: black;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.squares {
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(223, 223, 223, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    height: 100px;
+    overflow-x: hidden;
+
+}
+
+.squares1 {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #8338EC, #3A86FF);
+    animation-name: upDown;
+    animation-delay: 0s;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    filter: blur(5px);
+    opacity: 0.7;
+}
+
+.squares2 {
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #FF006E, #3A86FF);
+    animation-name: upDown;
+    animation-delay: 2s;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    filter: blur(3px);
+    opacity: 0.5;
+}
+
+.squares3 {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #FF006E, #FFBE0B);
+    animation-name: upDown;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    filter: blur(5px);
+    opacity: 0.9;
+}
+
+.squares4 {
+    position: absolute;
+    top: 170px;
+    left: 220px;
+    color: aliceblue;
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(45deg, #FB5607, #FF006E);
+    animation-name: downup;
+    animation-delay: 0.9s;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    filter: blur(7px);
+    opacity: 0.4;
+}
+
+.squares5 {
+    position: absolute;
+    top: 190px;
+    left: 490px;
+    color: aliceblue;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg, #FB5607, #FF006E);
+    animation-name: downup;
+    animation-delay: 2.5s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    filter: blur(7px);
+    opacity: 0.3;
+}
+
+.squares6 {
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    color: aliceblue;
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(45deg, #8338EC, #FFBE0B);
+    animation-name: downup;
+    animation-delay: 1s;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    filter: blur(7px);
+    opacity: 0.5;
+}
+
+#header {
+    width: 100vw;
+    height:76.8px;
+    background: linear-gradient(84deg, #8338EC, #3A86FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}
+
+#header nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+#header nav ul {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+#header nav ul li {
+    list-style-type: none;
+}
+
+#header nav ul li a {
+    color: azure;
+    text-decoration: none;
+}
+
+#home {
+    margin-top: 10vh;
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .cards {
+    width: 350px;
+    min-height: 400px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.picture {
+    text-align: center;
+    width: 50vw;
+    min-height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture img {
+    width: 55%;
+    height: 85%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.info {
+    text-align: center;
+    width: 350px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards h3 {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.cards h5 {
+    font-size: 25px;
+    text-align: center;
+
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#skills {
+
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 300vh;
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+#skillsstop {
+    visibility: hidden;
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+}
+
+#skills h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+.skilled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allsec {
+    display: flex;
+    flex-direction: column;
+}
+/* comm */
+.tellinfsec {
+    min-width: 50px;
+    max-width: 50vw;
+    min-height: 442px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.tellinfsec h3 {
+    text-align: center;
+    color: bisque;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.tellinfsec h2 {
+    text-align: center;
+    margin: 5px;
+}
+
+.percentage {
+    min-width: 297.89px;
+    height: 397.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#i {
+    font-size: 40px;
+    color: #FFBE0B;
+}
+
+#ama {
+    font-size: 40px;
+    color: #FB5607;
+}
+
+.fixed {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.percentage h2 {
+    text-align: center;
+}
+
+.percent {
+    margin: 10px;
+    max-width: 45vw;
+    background-color: grey;
+    height: 20px;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.htmlsec {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 50vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.htmlpercente {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 90%;
+    height: 100%;
+    background-color: #FB5607;
+    text-align: center;
+    color: black;
+}
+
+.csssec {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.csspercente {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 85%;
+    height: 100%;
+    background-color: #8338EC;
+    text-align: center;
+    color: black;
+}
+
+.jssec {
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jspercente {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 75%;
+    height: 100%;
+    background-color: #FFBE0B;
+    text-align: center;
+    color: black;
+}
+
+.pysec {
+
+    border-radius: 20px;
+    overflow: hidden;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pypercente {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, #3A86FF, rgb(0, 197, 0));
+    text-align: center;
+    color: black;
+}
+
+.tellskill {
+    height: 80%;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectsstop {
+    visibility: hidden;
+    height: 10vh;
+    background: #030303;
+    width: 100vw;
+}
+
+.project {
+    width: 100vw;
+    min-height: 50vh;
+    background: #030303;
+
+}
+
+.project h1 {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.reviews {
+    width: 100vw;
+    min-height: 50vh;
+    background-color: black;
+    color: #fff;
+}
+
+.reviews h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#stoprevies {
+    visibility: hidden;
+    height: 10vh;
+    background-color: #030303;
+    width: 100vw;
+}
+
+#stopServicevibeConnect{
+visibility: hidden; height: 10vh; width: 100vw;}
+
+.cardre {
+    padding: 20px;
+    background-color: #0e0e0e;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 25px;
+    min-height: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(206, 206, 206, 0.342), 0 6px 20px 0 rgba(255, 255, 255, 0.322);
+}
+
+.cardre p {
+    margin-top: 35px;
+}
+
+.sllcard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer {
+    margin-top: 10px;
+    border-top: 1px solid white;
+    min-height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: beige;
+}
+
+.footer .row2 ul,
+.row3 ul {
+    display: flex;
+}
+
+.footer .row2 ul li,
+.row3 ul li {
+    margin: 15px;
+}
+
+.footer .row2 ul li:nth-child(1),
+.row3 ul li:nth-child(1) {
+    list-style-type: none;
+}
+
+.menicon{
+    font-size: 25px;
+    display: none;
+}
+
+.hiddenmen{
+    width: 100vw;
+    max-height: 100vh;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    min-height: 20vh;
+    top:76.8px;
+}
+
+.hiddenmen li{
+    width: 100vw;
+    margin: 10px;
+    background-color: #030303;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .picture{
+display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    #header nav ul{
+        display: none;
+    }
+
+    .hide{
+        display: block;
+    }
+
+    .menicon{
+        display: block;
+        margin: 10px;
+    }
+
+    .hiddenmen{
+        width: 100vw;
+        max-height: 100vh;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        min-height: 20vh;
+        top:76.8px;
+        position: fixed;
+    }
+}
+
+.pro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.pro div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 225px;
+    height: 225px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.vibeconnect{
+    height: 50vh;
+    margin: 15px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+#vibeconnectContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#vibeconnectContainer img{
+    position: absolute;
+    width: 80%;
+    border-radius: 30px;
+    height: 50vh;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.heading-web{
+    color:#fff;
+    text-align: center;
+}
+
+.vibeconnect p{
+    color: #fff;
+}

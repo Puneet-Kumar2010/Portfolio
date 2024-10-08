@@ -1,0 +1,277 @@
+/* ? link custom google fonts stylesheets  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Roboto&display=swap');
+/* todo font-family: 'Nunito', sans-serif;
+todo font-family: 'Poppins', sans-serif;
+todo font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    transition: all 2s linear;
+    flex-wrap: wrap;
+}
+
+body {
+    overflow-x: hidden;
+    background: #20374B;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background: #20374B;
+}
+
+#Logo {
+    height: 10vh;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Logo h1{
+    color: #E7D887;
+}
+
+nav {
+    height: 10vh;
+    width: 60vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    transition: all 0.5s linear;
+    text-decoration: none;
+    color: rgb(184, 184, 184);
+}
+
+.active{
+    transition: all 0.5s linear;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.active::after{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    content: '______';
+    position: absolute;
+    border-radius: 10px;
+    color: #E7D887;
+    margin-top: 15px;
+}
+
+#home-sec{
+    margin-top: 30px;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img, .Intro{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    height: 500px;
+    width: 500px;
+}
+
+.img img{
+    border-radius:50%;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(235, 235, 235, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.img::before{
+    content: "";
+    background-color: yellow;
+    position: absolute;
+    z-index: -1;
+    width: 40%;
+    height: 60%;
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100% ;
+    opacity: 0.5;
+    box-shadow: 0 4px 8px 0 rgba(235, 235, 235, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+
+}
+
+.img::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 40%;
+    height: 60%;
+    box-shadow: 0 4px 8px 0 rgba(235, 235, 235, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+    opacity: 0.5;
+    border: 3px solid white;
+    background: #182938;
+}
+
+.Intro{
+    flex-direction: column;
+}
+
+.subnow{
+    color: yellow;
+    font-size: 45px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.news{
+    color: aliceblue;
+    font-size: 37px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.para{
+    margin: 10px;
+    margin-top: 15px;
+    text-align: center;
+    color: wheat;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+form input[type="text"], form input[type="email"]{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 289px;
+    height: 30px;
+    font-size: 17px;
+    padding-left: 19px;
+    
+}
+
+.submit{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 160px;
+    height: 40px;
+    font-size: 15px;
+    background-color: yellow;
+}
+
+lord-icon{
+    height: 50px;
+    width: 50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  nav img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+  }
+  
+
+@media (width <= 400px) {
+    nav ul {
+        display: none;
+    }
+    #Logo{
+        width: 140px;
+    }
+    .img img{
+        height: 300px;
+        width: 300px;
+    }
+    .img::before{
+        content: "";
+        background-color: yellow;
+        position: absolute;
+        z-index: -1;
+        width: 350px;
+        height: 350px;
+        border-radius: 0% 100% 0% 100% / 0% 100% 0% 100% ;
+        opacity: 0.5;
+        box-shadow: 0 4px 8px 0 rgba(235, 235, 235, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    
+    }
+    
+    .img::after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 350px;
+        height: 350px;
+        box-shadow: 0 4px 8px 0 rgba(235, 235, 235, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+        border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+        opacity: 0.5;
+        border: 3px solid white;
+        background: #182938;
+    }
+    lord-icon{
+        display: block;
+    }
+}
+
